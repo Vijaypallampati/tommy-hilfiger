@@ -1,6 +1,6 @@
 
 This framework has been setup with below configurations
-
+-------------------------------------------------------
 "@wdio/allure-reporter": "^7.21.0",
     "@wdio/cli": "^7.21.0",
     "@wdio/cucumber-framework": "^7.21.0",
@@ -12,7 +12,7 @@ This framework has been setup with below configurations
     "wdio-chromedriver-service": "^7.3.2"
 
 To execute scripts please follow below steps
-
+--------------------------------------------
 Please install NPM and VSCode editor
 
 Clone from Git repository main branch
@@ -31,6 +31,7 @@ cd tommy-hilfiger
 code .
 
 Below sceanrios are built
+-------------------------------
 1) Login into Tommy with valid credentials
 2) Login failed with invalid credentials
 3) Validate error message on username and password leaving as empty and click on submit
@@ -42,23 +43,24 @@ Below sceanrios are built
 9) Add new factuuraddress of the customer by filling firstname, lastname, address1, address2, city, zipcode, phone1, country and save the address
 
 Files available under
+---------------------------
 
 Pages paths are  - features/pageobjects/address.page.ts
                    features/pageobjects/login.page.ts
                    features/pageobjects/page.ts
                    features/pageobjects/secure.page.ts
-
+-------------------------------------------------------------
 Step definitions are - features/step-definitions/steps.ts
-
+-------------------------------------------------------------
 feature files are - features/addnewaddress.feature
                     features/login_error.feature
                     features/login_lenghterror.feature
                     features/login.feature
-
+----------------------------------------------------------------
 
 To execute scripts use below command
 
 npx wdio run wdio.conf.ts
 
-
+------------------------------------------------------------------
 Reports are available under -> allure-results
